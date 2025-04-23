@@ -1,1 +1,1 @@
-worker: bot.py
+worker: bluesky_post.py
