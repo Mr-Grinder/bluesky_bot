@@ -2,7 +2,7 @@ import os
 import telebot
 import requests
 
-TELEGRAM_BOT_TOKEN = os.environ.get('7987327814:AAHuVudS4MoOpc4QlA832wEZF2rwC2_KnLI')
+TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
 
 bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
 
