@@ -14,7 +14,6 @@ def handle_message(message):
     text = message.text.strip()
     bot.send_message(message.chat.id, f"Прийнято! Твій текст:\n{text}")
 
-print("BOT STARTED - VERSION 2")
   
 
 bot.polling()
