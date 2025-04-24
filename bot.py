@@ -13,6 +13,6 @@ def handle_message(message):
 
     text = message.text.strip()
     bot.send_message(message.chat.id, f"Прийнято! Твій текст:\n{text}")
-    # Тут пізніше вставимо код для публікації в BlueSky
+  
 
 bot.polling()
