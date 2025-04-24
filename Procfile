@@ -1,1 +1,1 @@
-worker: python bot.py
+worker: python bluesky_bot.py
