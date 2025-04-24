@@ -1,7 +1,7 @@
 import telebot
 import os
 
-bot = telebot.TeleBot(os.environ['TELEGRAM_BOT_TOKEN'])
+bot = telebot.TeleBot os.environ ('TELEGRAM_BOT_TOKEN')
 
 ALLOWED_USER_ID = 1066936794  
 
