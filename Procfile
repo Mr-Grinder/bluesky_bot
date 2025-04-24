@@ -1,1 +1,1 @@
-worker: phyton bot.py
+worker: phyton bluesky_post.py
