@@ -7,13 +7,16 @@ ALLOWED_USER_ID = 1066936794
 
 @bot.message_handler(func=lambda message: True)
 def handle_message(message):
-    if message.from_user.id != ALLOWED_USER_ID:
-        bot.send_message(message.chat.id, "Вибач, ти не маєш доступу до цього бота.")
-        return
-
+    user_id = message.from_user.id
+    username = message.from_user.username
+    first_name = message.from_user.first_name
     text = message.text.strip()
-    bot.send_message(message.chat.id, f"Прийнято! Твій текст:\n{text}")
+    
+    print(f"Повідомлення від {first_name} (@{username}), ID: {user_id} — {text}")
 
-  
+    if user_id != ALLOWED_USER_ID:
+        return  #Просто ігноруємо 
+
+    bot.send_message(message.chat.id, f"Прийнято! Твій текст:\n{text}")
 
 bot.polling()
